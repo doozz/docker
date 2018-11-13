@@ -1,0 +1,6 @@
+version: '3'
+services:
+  redis:
+    container_name: base_redis
+    build: ./redis
+
