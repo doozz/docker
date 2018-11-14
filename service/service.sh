@@ -19,7 +19,7 @@ case $action in
       	docker rmi "${file}:5.6"
       elif [ $file == "php" ]
       then
-	docker rmi "${file}:7.2"
+	docker rmi "${file}:7.2-fpm"
       else
         docker rmi $file
       fi
