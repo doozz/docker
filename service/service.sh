@@ -31,10 +31,7 @@ case $action in
     docker-compose up -d
   ;;
   "stop")
-    docker-compose stop
-  ;;
-  "login")
-    docker exec -it redis_for_ttxs redis-cli
+    docker-compose down
   ;;
   *)
     echo "usage: $0 [start|stop]"
