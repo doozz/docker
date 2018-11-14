@@ -1,6 +1,9 @@
 version: '3'
 services:
-  mysql:
+  service:
     container_name: base_mysql
     build: ./mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+
 
