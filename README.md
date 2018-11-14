@@ -2,7 +2,7 @@
 
 ## 1. 如何运行
 
-> cd service
+> cd service  
  ./service.sh build 构建基础镜像   
  ./service.sh start 构建容器  
  ./service.sh stop 停止并清除容器     
