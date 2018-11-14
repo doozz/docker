@@ -6,18 +6,12 @@ cd `dirname $0`
 
 script=$0
 action=$1
-service=("mysql","redis","nginx","php")
+service=("mysql" "redis" "nginx" "php")
 case $action in
   "build")
-    for file in $service
+    for file in "mysql" "redis" "nginx"
     do
-      cd $file 
-      docker-compose up -d
-      docker-compose down 
-      docker rm "${file}_service"
-      docker rm "$file"
-      cd ../
-      echo "{$file}_service images is done"
+      echo $file
     done
     echo "ready to start"
   ;;
