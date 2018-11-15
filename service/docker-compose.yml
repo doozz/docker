@@ -21,7 +21,6 @@ services:
       - ../www:/usr/local/www
       - ../config/php/zz-php.ini:/usr/local/etc/php/php.ini
       - ../config/php/zz-php-fpm.conf:/usr/local/etc/php-fpm.conf
-      - ../logs/php:/var/log/php-fpm
       - "phpsocket:/var/run/php"
     network_mode: "host"
     restart: always
