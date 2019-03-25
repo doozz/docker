@@ -31,6 +31,9 @@ RUN curl -fsSL 'http://pecl.php.net/get/redis-3.1.4.tgz' -o redis-3.1.4.tgz \
     && cd cphalcon-3.4.0/build \
     && ./install \
     && docker-php-ext-enable phalcon \
-    && cd ../.. rm -r cphalcon-3.4.0
+    && cd ../.. rm -r cphalcon-3.4.0 \
+    
+    && pecl install grpc \
+    && docker-php-ext-enable grpc
 
 
